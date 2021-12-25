@@ -5,6 +5,8 @@ import { useNavigation } from '@react-navigation/native'
 import { availableServices } from '../API/api'
 import Button from '../components/Button'
 
+const slots = ["1pm to 2pm", "4pm to 6pm", "7pm to 8pm"]
+
 const ServiceBookScreen = () => {
     const navigation = useNavigation()
     return (
