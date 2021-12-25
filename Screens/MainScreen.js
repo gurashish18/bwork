@@ -5,8 +5,10 @@ import SearchBar from '../components/SearchBar'
 import ImageSlider from '../components/ImageSlider'
 import { offers } from '../API/api'
 import {data} from '../API/api'
+import {useNavigation} from '@react-navigation/native'
 
 const MainScreen = () => {
+    const navigation = useNavigation()
     return (
         <ScrollView style={{backgroundColor: '#000000'}}>
             <UserLocation />
@@ -21,7 +23,7 @@ const MainScreen = () => {
                 <Text style={{...styles.title, color: '#ffc107', textAlign: 'center', marginBottom: 20}}>Services</Text>
                 <View style={{flex: 1,flexDirection: 'row',flexWrap: 'wrap'}}>
                         {data.map((s) => (
-                            <TouchableOpacity key={s.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate(s.dest)}>
+                            <TouchableOpacity key={s.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("Services")}>
                                 <View>
                                     <Image source={s.imageuri} style={{height: 60,width: 60, resizeMode: 'contain'}} />
                                 </View>

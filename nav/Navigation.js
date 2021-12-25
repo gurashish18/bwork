@@ -5,7 +5,9 @@ import OnboardScreen from '../Screens/OnboardScreen';
 import OTPloginScreen from '../Screens/OTPloginScreen';
 import OTPverifyScreen from '../Screens/OTPverifyScreen';
 import BottomTabNav from './BottomTabNav'
-
+import ServicesScreen from '../Screens/ServicesScreen'
+import ServiceBookScreen from '../Screens/ServiceBookScreen'
+ 
 
 const Navigation = () => {
     const Stack = createNativeStackNavigator();
@@ -17,6 +19,8 @@ const Navigation = () => {
                     <Stack.Screen name="OTPlogin" component={OTPloginScreen} />
                     <Stack.Screen name="OTPverify" component={OTPverifyScreen} />
                     <Stack.Screen name="BottomTab" component={BottomTabNav} />
+                    <Stack.Screen name="Services" component={ServicesScreen} />
+                    <Stack.Screen name="ServiceBook" component={ServiceBookScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

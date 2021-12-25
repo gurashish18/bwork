@@ -22,7 +22,7 @@ const SearchBar = () => {
         setsearchResults(data.filter((query) => query.title.includes(text)))
     }
     const handleModal = () => {
-        navigation.navigate("")
+        navigation.navigate("Services")
     }
     return (
         <View style={{...styles.container, backgroundColor: '#ffc107'}}>
