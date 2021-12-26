@@ -14,6 +14,14 @@ const OTPloginScreen = () => {
     const [valid, setValid] = useState(false);
     const phoneInput = useRef(null);
 
+    const GetOTP = () => {
+        if(phoneNumber && phoneNumber.length > 9){
+            navigation.navigate('OTPverify', {phoneNumber});
+        }
+        else
+            alert("Please enter 10 digit phone number");
+    }
+
     return (
         <View style={{...styles.container, backgroundColor: '#000000'}}>
             <Text style={{fontSize: 24, marginBottom: 15, fontWeight: '900', color: '#ffffff', textAlign: 'center'}}>Enter Phone number to get verified.</Text>
@@ -23,16 +31,16 @@ const OTPloginScreen = () => {
                 defaultCode="IN"
                 layout="first"
                 onChangeText={(text) => {
-                setphoneNumber(text);
+                    setphoneNumber(text);
                 }}
                 onChangeFormattedText={(text) => {
-                setFormattedValue(text);
+                    setFormattedValue(text);
                 }}
                 withDarkTheme
                 withShadow
                 autoFocus
           />
-          <Button onPress={()=>navigation.navigate("OTPverify")} buttontext="Request OTP"/>
+          <Button onPress={GetOTP} buttontext="Request OTP"/>
         </View>
     )
 }

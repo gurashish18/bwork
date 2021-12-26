@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "442332284622",
+    "project_id": "bwork-277bb",
+    "storage_bucket": "bwork-277bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:442332284622:android:23284e48eed3e6cdb1729f",
+        "android_client_info": {
+          "package_name": "com.bwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "442332284622-n7pqlf8ariekv3e5tcumalh8k59lhh6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.bwork",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "442332284622-gan3v3m12fpjuc5vo27einlc132f07jt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9jGDm7FkKC-y4wm97bGX_VZRHtwlpTVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "442332284622-gan3v3m12fpjuc5vo27einlc132f07jt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
