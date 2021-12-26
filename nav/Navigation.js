@@ -7,6 +7,7 @@ import OTPverifyScreen from '../Screens/OTPverifyScreen';
 import BottomTabNav from './BottomTabNav'
 import ServicesScreen from '../Screens/ServicesScreen'
 import ServiceBookScreen from '../Screens/ServiceBookScreen'
+import EditProfileScreen from '../Screens/EditProfileScreen'
  
 
 const Navigation = () => {
@@ -21,6 +22,7 @@ const Navigation = () => {
                     <Stack.Screen name="BottomTab" component={BottomTabNav} />
                     <Stack.Screen name="Services" component={ServicesScreen} />
                     <Stack.Screen name="ServiceBook" component={ServiceBookScreen} />
+                    <Stack.Screen name="EditProfile" component={EditProfileScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )
