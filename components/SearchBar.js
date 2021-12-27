@@ -28,11 +28,11 @@ const SearchBar = () => {
         <View style={{...styles.container, backgroundColor: '#ffc107'}}>
             <Icon name="search" style={{...styles.icon, color: '#000000'}}/>
             <TextInput placeholder="Search for services and packages" placeholderTextColor={'#000000'} style={{...styles.textinput, color: '#000000'}} onChangeText={(text) => handleSearch(text)}/>
-            <ScrollView style={{...styles.searchResults, backgroundColor: '#212121', borderWidth: 1, borderColor: '#ffffff'}}>
+            <ScrollView style={{...styles.searchResults, backgroundColor: '#eeeeee', borderWidth: 1, borderColor: '#000000'}}>
                 {searchResults.map((s) => (
                     <TouchableOpacity key={s.id} style={styles.card_container} onPress={() => handleModal()}>
                         <Image source={s.imageuri} style={styles.Image} />
-                        <Text style={{color: '#ffffff'}}>{s.title}</Text>
+                        <Text style={{color: '#000000'}}>{s.title}</Text>
                     </TouchableOpacity>
                 ))}
             </ScrollView>
@@ -47,7 +47,6 @@ const styles = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
-        borderWidth: 1,
         borderRadius: 5,
         margin: 10,
         paddingHorizontal: 5,

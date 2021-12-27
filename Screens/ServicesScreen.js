@@ -10,15 +10,15 @@ const CARD_WIDTH2 = Math.round(WINDOW_WIDTH)
 const ServicesScreen = ({ route: { params: { s } }}) => {
     const navigation = useNavigation();
     return (
-        <ScrollView style={{backgroundColor: '#000000'}}>
+        <ScrollView style={{backgroundColor: '#ffffff'}}>
             <ImageBackground source={s.bannerimage} style={{width: '100%', height: 250, resizeMode: 'contain'}}>
                 <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'flex-end', alignItems: 'center'}}>
                     <Text style={{fontSize: 30, color: '#ffffff', fontWeight: 'bold'}}>{s.job}</Text>
                 </View>
             </ImageBackground>
 
-            <View style={{margin: 10, backgroundColor: '#212121', borderRadius: 20, paddingVertical: 10}}>
-                <Text style={{color: '#ffc107', fontSize: 24, marginLeft: 20, fontWeight: 'bold', marginBottom: 20, textAlign: 'center'}}>Select a Service</Text>
+            <View style={{margin: 10, backgroundColor: '#eeeeee', borderRadius: 20, paddingVertical: 10}}>
+                <Text style={{color: '#000000', fontSize: 24, marginLeft: 20, fontWeight: 'bold', marginBottom: 20, textAlign: 'center'}}>Select a Service</Text>
                 <View style={{flex: 1,flexDirection: 'row',flexWrap: 'wrap'}}>
                         {s.services.map((item) => (
                             <TouchableOpacity key={item.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("ServiceBook", {item})}>
@@ -26,7 +26,7 @@ const ServicesScreen = ({ route: { params: { s } }}) => {
                                     <Image source={item.imageuri} style={{height: 130,width: 130, resizeMode: 'contain', borderRadius: 10}} />
                                 </View>
                                 <View>
-                                    <Text style={{color: '#ffffff'}}>{item.title}</Text>
+                                    <Text style={{color: '#000000'}}>{item.title}</Text>
                                 </View>
                             </TouchableOpacity>
                         ))}

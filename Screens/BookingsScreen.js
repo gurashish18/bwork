@@ -9,30 +9,30 @@ const BookingsScreen = () => {
     const navigation = useNavigation()
     return (
         <FlatList
-                style={{backgroundColor: '#000000'}}
+                style={{backgroundColor: '#ffffff'}}
                 ListHeaderComponent={
                     <>
-                        <Text style={{fontSize: 24, color:'#ffffff', paddingVertical: 20, marginLeft: 30, fontWeight: 'bold'}}>Your Booked Services</Text>
+                        <Text style={{fontSize: 24, color:'#000000', paddingVertical: 20, marginLeft: 30, fontWeight: 'bold'}}>Your Booked Services</Text>
                     </>
                 }
                 horizontal={false} 
                 data={availableServices.bookservices} 
                 renderItem={({item, index}) => (
-                    <SafeAreaView style={{padding: 10, margin: 10, borderRadius: 20, backgroundColor: '#212121'}}>
+                    <SafeAreaView style={{padding: 10, margin: 10, borderRadius: 20, backgroundColor: '#eeeeee'}}>
                         <View style={{flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', padding: 15}}>
                             <View>
                                 <Text style={{color: '#FFB800', fontWeight:'bold', fontSize: 16}}>UP TO {item.off}% OFF</Text>
-                                <Text style={{color: '#ffffff', fontSize: 20, fontWeight: 'bold'}}>{item.title}</Text>
+                                <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold'}}>{item.title}</Text>
                                 <View style={{flexDirection: 'row', alignItems: 'center'}}>
                                     <Text style={{fontSize: 16, color: 'grey'}}>{item.stars}</Text>
-                                    <Icon name='star' size={24} style={{color: '#ffffff'}}/>
+                                    <Icon name='star' size={24} style={{color: '#000000'}}/>
                                 </View>
                                 <Text style={{fontSize: 16, color: 'grey'}}>{item.rating}+ ratings</Text>
                                 <View style={{flexDirection: 'row'}}>
                                     <Text style={{color: '#39C16C', fontSize: 20, fontWeight: 'bold', marginRight: 15}}>₹{item.price - item.price * (item.off/100)}</Text>
-                                    <Text style={{color: '#ffffff', fontSize: 20, fontWeight: 'bold', marginRight: 15, textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>₹{item.price}</Text>
-                                    <Text style={{color: '#ffffff', fontSize: 20, fontWeight: 'bold', marginRight: 15}}>.</Text>
-                                    <Text style={{color: '#ffffff', fontSize: 20, fontWeight: 'bold'}}>{item.time} mins</Text>
+                                    <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold', marginRight: 15, textDecorationLine: 'line-through', textDecorationStyle: 'solid'}}>₹{item.price}</Text>
+                                    <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold', marginRight: 15}}>.</Text>
+                                    <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold'}}>{item.time} mins</Text>
                                 </View>
                             </View>
                             <Pressable style={styles.container}>

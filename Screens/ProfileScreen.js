@@ -29,13 +29,19 @@ const data = [
         text: 'Settings',
         dest: 'Settings'
     },
+    {
+        id: '7',
+        icon: 'link',
+        text: 'Partner App',
+        dest: 'Settings'
+    },
 ]
 
 const ProfileScreen = () => {
     const navigation = useNavigation()
     return (
         <FlatList
-                style={{backgroundColor: '#000000'}}
+                style={{backgroundColor: '#ffffff'}}
                 ListHeaderComponent={
                     <>
                         {/* <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', padding: 20}}>
@@ -56,27 +62,27 @@ const ProfileScreen = () => {
                                     size={80}
                                 />
                                 <View style={{marginLeft: 20}}>
-                                    <Title style={[styles.title, {marginTop:15, marginBottom: 5,color: '#ffffff'}]}>Rahul Sharma</Title>
+                                    <Title style={[styles.title, {marginTop:15, marginBottom: 5,color: '#000000'}]}>Rahul Sharma</Title>
                                     <Caption style={styles.caption}>@r_sharma</Caption>
                                 </View>
                             </View>
                             <View>
-                                <Icon name="edit" color={'#ffffff'} size={30} onPress={()=> navigation.navigate("EditProfile")}/>
+                                <Icon name="edit" color={'#000000'} size={30} onPress={()=> navigation.navigate("EditProfile")}/>
                             </View>
                         </View>
 
                         <View style={styles.userInfoSection}>
                             <View style={styles.row}>
-                                <Icon name="location-on" color="lightgrey" size={20}/>
-                                <Text style={{color:"lightgrey", marginLeft: 20}}>Kolkata, India</Text>
+                                <Icon name="location-on" color="grey" size={20}/>
+                                <Text style={{color:"grey", marginLeft: 20}}>Kolkata, India</Text>
                             </View>
                             <View style={styles.row}>
-                                <Icon name="local-phone" color="lightgrey" size={20}/>
-                                <Text style={{color:"lightgrey", marginLeft: 20}}>+91-900000009</Text>
+                                <Icon name="local-phone" color="grey" size={20}/>
+                                <Text style={{color:"grey", marginLeft: 20}}>+91-900000009</Text>
                             </View>
                             <View style={styles.row}>
-                                <Icon name="email" color="lightgrey" size={20}/>
-                                <Text style={{color:"lightgrey", marginLeft: 20}}>r_sharma123@email.com</Text>
+                                <Icon name="email" color="grey" size={20}/>
+                                <Text style={{color:"grey", marginLeft: 20}}>r_sharma123@email.com</Text>
                             </View>
                         </View>
                     </>
@@ -84,9 +90,9 @@ const ProfileScreen = () => {
                 horizontal={false} 
                 data={data} 
                 renderItem={({item, index}) => (
-                    <TouchableOpacity style={{backgroundColor: '#212121', flexDirection: 'row', alignItems: 'center', paddingVertical: 20, margin: 10, borderRadius: 20 }}>
-                        <Icon name={item.icon} size={30} style={{paddingHorizontal: 20, color:'#ffffff'}}/>
-                        <Text style={{fontSize: 18, color:'#ffffff'}}>{item.text}</Text>
+                    <TouchableOpacity style={{backgroundColor: '#eeeeee', flexDirection: 'row', alignItems: 'center', paddingVertical: 20, margin: 10, borderRadius: 20 }}>
+                        <Icon name={item.icon} size={30} style={{paddingHorizontal: 20, color:'#000000'}}/>
+                        <Text style={{fontSize: 18, color:'#000000'}}>{item.text}</Text>
                     </TouchableOpacity>
                 )}
                 keyExtractor={item => item.id}
@@ -134,7 +140,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         lineHeight: 14,
         fontWeight: '500',
-        color: '#ffffff'
+        color: '#000000'
     },
     row: {
         flexDirection: 'row',

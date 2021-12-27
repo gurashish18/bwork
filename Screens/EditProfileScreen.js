@@ -6,7 +6,7 @@ import Button from '../components/Button'
 const EditProfileScreen = () => {
     const[image, setimage] = useState('https://www.citrix.com/blogs/wp-content/upload/2018/03/slack_compressed-e1521621363404-360x360.jpg')
     return (
-        <View style={{...styles.container, backgroundColor: '#000000'}}>
+        <View style={{...styles.container, backgroundColor: '#ffffff'}}>
             <View style={{alignItems: 'center'}}>
                 <TouchableOpacity>
                     <View style={{height: 100,width: 100,borderRadius: 15,justifyContent: 'center',alignItems: 'center'}}>
@@ -21,7 +21,7 @@ const EditProfileScreen = () => {
                                     alignItems: 'center',
                                     justifyContent: 'center',
                                     borderWidth: 1,
-                                    borderColor: '#fff',
+                                    borderColor: '#ffffff',
                                     borderRadius: 10,
                                     }}
                                 />
@@ -30,88 +30,88 @@ const EditProfileScreen = () => {
                     </View>
                 </TouchableOpacity>
 
-                <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold', color: '#ffffff'}}>
+                <Text style={{marginTop: 10, fontSize: 18, fontWeight: 'bold', color: '#000000'}}>
                     Rahul Sharma
                 </Text>
             </View>
 
             <View style={styles.action}>
-                <Icon name="person" color={'#ffffff'} size={30} />
+                <Icon name="person" color={'#000000'} size={30} />
                 <TextInput
                     placeholder="First Name"
-                    placeholderTextColor="lightgrey"
+                    placeholderTextColor="grey"
                     autoCorrect={false}
                     style={[
                     styles.textInput,
                     {
                         fontSize: 16,
-                        color: '#ffffff'
+                        color: '#000000'
                     },
                     ]}
                 />
             </View>
 
             <View style={styles.action}>
-                <Icon name="person" color={'#ffffff'} size={30} />
+                <Icon name="person" color={'#000000'} size={30} />
                 <TextInput
                     placeholder="Last Name"
-                    placeholderTextColor="lightgrey"
+                    placeholderTextColor="grey"
                     autoCorrect={false}
                     style={[
                     styles.textInput,
                     {
                         fontSize: 16,
-                        color: '#ffffff'
+                        color: '#000000'
                     },
                     ]}
                 />
             </View>
 
             <View style={styles.action}>
-                <Icon name="local-phone" color={'#ffffff'} size={30} />
+                <Icon name="local-phone" color={'#000000'} size={30} />
                 <TextInput
                     placeholder="Phone"
-                    placeholderTextColor="lightgrey"
+                    placeholderTextColor="grey"
                     keyboardType="number-pad"
                     autoCorrect={false}
                     style={[
                     styles.textInput,
                     {
                         fontSize: 16,
-                        color: '#ffffff'
+                        color: '#000000'
                     },
                     ]}
                 />
             </View>
 
             <View style={styles.action}>
-                <Icon name="email" color={'#ffffff'} size={30} />
+                <Icon name="email" color={'#000000'} size={30} />
                 <TextInput
                     placeholder="Email"
-                    placeholderTextColor="lightgrey"
+                    placeholderTextColor="grey"
                     keyboardType="email-address"
                     autoCorrect={false}
                     style={[
                     styles.textInput,
                     {
                         fontSize: 16,
-                        color: '#ffffff'
+                        color: '#000000'
                     },
                     ]}
                 />
             </View>
 
             <View style={styles.action}>
-                <Icon name="edit-location" color={'#ffffff'} size={30} />
+                <Icon name="edit-location" color={'#000000'} size={30} />
                 <TextInput
                     placeholder="City"
-                    placeholderTextColor="lightgrey"
+                    placeholderTextColor="grey"
                     autoCorrect={false}
                     style={[
                     styles.textInput,
                     {
                         fontSize: 16,
-                        color: '#ffffff'
+                        color: '#000000'
                     },
                     ]}
                 />
@@ -199,7 +199,7 @@ const styles = StyleSheet.create({
         marginTop: 10,
         marginBottom: 10,
         borderWidth: 1,
-        borderColor: '#f2f2f2',
+        borderColor: 'grey',
         borderRadius: 20,
         padding: 5,
       },

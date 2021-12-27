@@ -16,10 +16,10 @@ const OnboardScreen = () => {
         return (
               <View style={{flex: 1, backgroundColor: item.backgroundColor,alignItems: 'center',justifyContent: 'center'}}>
                 <Image style={styles.introImageStyle} source={item.image} />
-                <View style={{padding: 5, alignItems: 'center'}}>
+                {/* <View style={{padding: 5, alignItems: 'center'}}>
                   <Text style={{color: '#ffffff', fontSize: 25, fontWeight: '900', alignSelf: 'center', textAlign: 'center'}}>{item.title}</Text>
                   <Text style={{color: '#e0e0e0', fontSize: 16, fontWeight: '400', alignSelf: 'center', marginTop: 10, textAlign: 'center'}}>{item.text}</Text>
-                </View>
+                </View> */}
               </View>
         );
       };
@@ -87,6 +87,6 @@ const slides = [
       text: 'Manpower solutions for Automobile Industry, Food Industry, Plastic Industry, Educational Institutions, Energy Sector, Bottling plants and Industrial housekeeping etc.',
       title: 'Man power supply in India & Abroad',
       image: require('../assets/logo.png'),
-      backgroundColor: '#000000',
+      backgroundColor: '#ffffff',
     },
 ]

@@ -75,10 +75,10 @@ const UserLocation = () => {
 
     return (
         <View style={{flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-start', margin: 10}}>
-            <Icon name="location-on" size={30} style={{color: '#ffffff'}}/>
+            <Icon name="location-on" size={30} style={{color: '#000000'}}/>
             <View style={{flexDirection: 'row'}}>
-                <Text style={{marginHorizontal: 10, color: '#ffffff'}}>{currentLatitude}</Text>
-                <Text style={{color: '#ffffff'}}>{currentLongitude}</Text>
+                <Text style={{marginHorizontal: 10, color: '#000000'}}>{currentLatitude}</Text>
+                <Text style={{color: '#000000'}}>{currentLongitude}</Text>
                 {/* <Text style={{color: darkMode?'#f5f5f5':'#212121'}}>{address}</Text> */}
             </View>
         </View>

@@ -49,7 +49,7 @@ const ImageSlider = ({data}) => {
                 height: 10,
                 borderRadius: 5,
                 marginHorizontal: 0,
-                backgroundColor: '#ffffff'
+                backgroundColor: '#000000'
             }}
             inactiveDotOpacity={0.4}
             inactiveDotScale={0.6}

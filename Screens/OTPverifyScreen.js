@@ -42,20 +42,20 @@ const OTPverifyScreen = ({ route: { params: { phoneNumber } }}) => {
       setspinner(false)
     }
     return (
-        <View style={{flex:1, backgroundColor: '#000000', alignItems: 'center', justifyContent: 'center'}}>
+        <View style={{flex:1, backgroundColor: '#ffffff', alignItems: 'center', justifyContent: 'center'}}>
             <Spinner
               visible={spinner}
               textContent={'Loading...'}
-              textStyle={{}}
+              textStyle={{color: '#000000'}}
             />
-            <Text style={{fontSize: 20, color: '#ffffff'}}>Enter code here</Text>
+            <Text style={{fontSize: 20, color: '#000000'}}>Enter code here</Text>
             <OTPInputView
-                style={{width: '80%', height: 200}}
+                style={{width: '80%', height: 200, color: '#000000'}}
                 pinCount={6}
                 code={otp}
                 onCodeChanged = {code => setotp(code)}
                 autoFocusOnLoad
-                codeInputFieldStyle={{...styles.underlineStyleBase, borderColor: '#ffffff'}}
+                codeInputFieldStyle={{...styles.underlineStyleBase, borderColor: '#000000'}}
                 codeInputHighlightStyle={{borderColor: '#3284FF'}}
                 onCodeFilled = {code => {} }
             />

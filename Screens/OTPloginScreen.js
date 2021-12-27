@@ -23,8 +23,8 @@ const OTPloginScreen = () => {
     }
 
     return (
-        <View style={{...styles.container, backgroundColor: '#000000'}}>
-            <Text style={{fontSize: 24, marginBottom: 15, fontWeight: '900', color: '#ffffff', textAlign: 'center'}}>Enter Phone number to get verified.</Text>
+        <View style={{...styles.container, backgroundColor: '#ffffff'}}>
+            <Text style={{fontSize: 24, marginBottom: 15, fontWeight: '900', color: '#000000', textAlign: 'center'}}>Enter Phone number to get verified.</Text>
             <PhoneInput
                 ref={phoneInput}
                 defaultValue={phoneNumber}
