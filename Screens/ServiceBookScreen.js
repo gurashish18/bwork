@@ -7,7 +7,7 @@ import Button from '../components/Button'
 
 const slots = ["1pm to 2pm", "4pm to 6pm", "7pm to 8pm"]
 
-const ServiceBookScreen = () => {
+const ServiceBookScreen = ({ route: { params: { item } }}) => {
     const navigation = useNavigation()
     return (
         <FlatList
@@ -15,10 +15,13 @@ const ServiceBookScreen = () => {
                 ListHeaderComponent={
                     <>
                         <Text style={{fontSize: 24, color:'#ffffff', paddingVertical: 20, marginLeft: 30, fontWeight: 'bold'}}>Book your service</Text>
+                        <Text style={{color: 'lightgrey', fontSize: 18, padding: 10}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consectetur accusantium dicta at dolore veritatis qui sit odit optio, nulla quos tempora sapiente quaerat placeat fugiat. Eum ipsa sunt minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus, nostrum sint, animi iste officia dolor nobis obcaecati optio laborum voluptatum eum est quae pariatur harum nulla, provident voluptate. Quo!
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum rerum praesentium. Cumque eaque ipsum deserunt minima tempora ratione. Nihil harum dolorem laborum tempora eveniet. Maxime ipsam minima nobis a reprehenderit amet</Text>
                     </>
                 }
                 horizontal={false} 
-                data={availableServices.bookservices} 
+                data={item.booking} 
                 renderItem={({item, index}) => (
                     <SafeAreaView style={{padding: 10, margin: 10, borderRadius: 20, backgroundColor: '#212121'}}>
                         <View style={{flexDirection: 'column', alignItems: 'center', justifyContent: 'space-between', padding: 15}}>

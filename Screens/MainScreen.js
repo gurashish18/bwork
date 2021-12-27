@@ -4,7 +4,7 @@ import UserLocation from '../components/UserLocation'
 import SearchBar from '../components/SearchBar'
 import ImageSlider from '../components/ImageSlider'
 import { offers } from '../API/api'
-import {data} from '../API/api'
+import {data, newdata} from '../API/api'
 import {useNavigation} from '@react-navigation/native'
 
 const MainScreen = () => {
@@ -22,8 +22,8 @@ const MainScreen = () => {
             <View style={{flex:1,margin: 10, backgroundColor: '#212121', borderRadius: 20, paddingVertical: 10, position: 'relative',zIndex: -1}}>
                 <Text style={{...styles.title, color: '#ffc107', textAlign: 'center', marginBottom: 20}}>Services</Text>
                 <View style={{flex: 1,flexDirection: 'row',flexWrap: 'wrap'}}>
-                        {data.map((s) => (
-                            <TouchableOpacity key={s.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("Services")}>
+                        {newdata.map((s) => (
+                            <TouchableOpacity key={s.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("Services", {s})}>
                                 <View>
                                     <Image source={s.imageuri} style={{height: 60,width: 60, resizeMode: 'contain'}} />
                                 </View>
