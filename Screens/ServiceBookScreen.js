@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import { ScrollView, StyleSheet, Text, View, ImageBackground, FlatList, Image, SafeAreaView, TextInput } from 'react-native'
+import { ScrollView, StyleSheet, Text, View, ImageBackground, FlatList, Image, SafeAreaView, TextInput, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { availableServices } from '../API/api'
 import Button from '../components/Button'
@@ -13,7 +13,7 @@ const slots = ["1pm to 2pm", "4pm to 6pm", "7pm to 8pm"]
 const ServiceBookScreen = ({ route: { params: { item } }}) => {
     const [isModalVisible, setModalVisible] = useState(false);
 
-    const [isSelected, setSelection] = useState(true);
+    const [isSelected, setSelection] = useState(false);
 
     const toggleModal = () => {
         setModalVisible(!isModalVisible);
@@ -57,6 +57,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                     <Text style={{color: '#000000', textAlign: 'center', fontSize: 24, marginBottom: 20, marginTop: 50}}>Payments</Text>
                                     <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
                                         <CheckBox
+                                            tintColors={{true: '#ffc107'}}
                                             value={isSelected}
                                             onValueChange={setSelection}
                                             style={{}}
@@ -65,6 +66,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                     </View>
                                     <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
                                         <CheckBox
+                                            tintColors={{true: '#ffc107'}}
                                             value={isSelected}
                                             onValueChange={setSelection}
                                             style={{}}
@@ -73,6 +75,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                     </View>
                                     <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
                                         <CheckBox
+                                            tintColors={{true: '#ffc107'}}
                                             value={isSelected}
                                             onValueChange={setSelection}
                                             style={{}}
@@ -81,6 +84,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                     </View>
                                     <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
                                         <CheckBox
+                                            tintColors={{true: '#ffc107'}}
                                             value={isSelected}
                                             onValueChange={setSelection}
                                             style={{}}
@@ -93,19 +97,21 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                         <Text style={{color: 'grey'}}>₹{item.price - item.price * (item.off/100)}</Text>
                                     </View>
 
-                                    <Text style={{color: '#000000', textAlign: 'center', fontSize: 24, marginBottom: 20, marginTop: 50}}>Enter Address</Text>
-                                    <TextInput
-                                        placeholder="Address line"
-                                        placeholderTextColor="grey"
-                                        autoCorrect={false}
-                                        style={[
-                                        styles.textInput,
-                                        {
-                                            fontSize: 16,
-                                            color: '#000000'
-                                        },
-                                        ]}
-                                    />
+                                    <Text style={{color: '#000000', textAlign: 'center', fontSize: 24, marginBottom: 20, marginTop: 50}}>Address</Text>
+                                    <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
+                                        <CheckBox
+                                            tintColors={{true: '#ffc107'}}
+                                            value={isSelected}
+                                            onValueChange={setSelection}
+                                            style={{}}
+                                            />
+                                        <Text style={{color: '#000000',fontSize: 20, marginLeft: 10}}>#abc, Sector x, U.E., Patna, Bihar</Text>
+                                    </View>
+
+                                    <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5, alignSelf:'center'}} onPress={()=>navigation.navigate('AddAddress')}>
+                                        <Icon name="add" color='#000000' size={30}/>
+                                        <Text style={{color: '#000000',fontSize: 16, marginLeft: 10}}>Add Address</Text>
+                                    </TouchableOpacity>
                                     
                                     <View style={{alignSelf: 'center', marginTop: 20}}>
                                         <Button buttontext="CONFIRM BOOKING"/>

@@ -72,12 +72,13 @@ const styles = StyleSheet.create({
         alignItems:'center',
         justifyContent: 'center',
         height: 100,
-        // width: CARD_WIDTH,
+        width: CARD_WIDTH,
         borderRadius: 10,
         margin: 5,
       },
     Image: {
         height: 80,
+        width: 80,
         resizeMode: 'contain',
       }
 })

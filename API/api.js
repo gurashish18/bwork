@@ -1166,7 +1166,7 @@ export const newdata = [
     },
     {
         id: '9',
-        imageuri: require('../assets/icons2/houseConst.png'),
+        imageuri: require('../assets/icons2/housePaint.png'),
         title: 'House Construction',
         dest: 'Service',
         bannerimage: require('../assets/houseconst.jpg'),
@@ -1276,7 +1276,7 @@ export const newdata = [
     },
     {
         id: '11',
-        imageuri: require('../assets/icons2/waterPurifire.png'),
+        imageuri: require('../assets/icons2/waterPurifier.png'),
         title: 'Water Purifier',
         dest: 'Service',
         bannerimage: require('../assets/purifier.png'),
@@ -1319,17 +1319,17 @@ export const newdata = [
         imageuri: require('../assets/logo.png'),
         title: 'Shop near by',
         dest: 'Service',
-        bannerimage: require('../assets/purifier.png'),
-        job: 'Water Purifier',
+        bannerimage: require('../assets/shop.png'),
+        job: 'Shop near by',
         services: [
             {
                 id: '1',
-                title: 'Purifier Service',
-                imageuri: require('../assets/purifierservice.png'),
+                title: 'Fan',
+                imageuri: require('../assets/fan.jpeg'),
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
-                    title: 'Purifier Service',
+                    title: 'Fan Services',
                     off: 25,
                     stars: 4.8,
                     rating: 200,
@@ -1339,12 +1339,12 @@ export const newdata = [
             },
             {
                 id: '2',
-                title: 'Purifier Installation',
-                imageuri: require('../assets/purifierinstall.jpg'),
+                title: 'Motor work',
+                imageuri: require('../assets/motor.jpg'),
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
-                    title: 'Purifier Installation',
+                    title: 'Motor Work',
                     off: 25,
                     stars: 4.8,
                     rating: 200,
@@ -1395,7 +1395,7 @@ export const offers = [
     },
     {
         id: '2',
-        imageuri: require('../assets/sale2.jpg'),
+        imageuri: require('../assets/sale.jpg'),
         title: 'SALE'
     },
     {
@@ -1405,7 +1405,7 @@ export const offers = [
     },
     {
         id: '4',
-        imageuri: require('../assets/sale2.jpg'),
+        imageuri: require('../assets/sale.jpg'),
         title: 'SALE'
     },
 ]

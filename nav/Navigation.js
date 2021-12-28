@@ -8,7 +8,7 @@ import BottomTabNav from './BottomTabNav'
 import ServicesScreen from '../Screens/ServicesScreen'
 import ServiceBookScreen from '../Screens/ServiceBookScreen'
 import EditProfileScreen from '../Screens/EditProfileScreen'
- 
+import AddAddressScreen from '../Screens/AddAddressScreen' 
 
 const Navigation = () => {
     const Stack = createNativeStackNavigator();
@@ -23,6 +23,7 @@ const Navigation = () => {
                     <Stack.Screen name="Services" component={ServicesScreen} />
                     <Stack.Screen name="ServiceBook" component={ServiceBookScreen} />
                     <Stack.Screen name="EditProfile" component={EditProfileScreen} />
+                    <Stack.Screen name="AddAddress" component={AddAddressScreen} />
             </Stack.Navigator>
         </NavigationContainer>
     )

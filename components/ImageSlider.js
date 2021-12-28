@@ -25,7 +25,7 @@ const ImageSlider = ({data}) => {
         <View style={{position: 'relative', zIndex: -1}}>
             <Carousel
             layout="tinder"
-            layoutCardOffset={9}
+            layoutCardOffset={5}
             ref={isCarousel}
             data={data}
             renderItem={CarouselCardItem}
@@ -35,10 +35,10 @@ const ImageSlider = ({data}) => {
             inactiveSlideShift={0}
             useScrollView={true}
             onSnapToItem={(index) => setIndex(index)}
-            autoplay={true}
-            autoplayDelay={3000}
-            autoplayInterval={3000}
-            loop={true}
+            // autoplay={true}
+            // autoplayDelay={6000}
+            // autoplayInterval={6000}
+            // loop={true}
         />
         <Pagination
             dotsLength={data.length}
