@@ -1,5 +1,5 @@
 import React, {useContext, useState, useRef} from 'react'
-import { StyleSheet, Text, TextInput, View } from 'react-native'
+import { Image, StyleSheet, Text, TextInput, View } from 'react-native'
 import PhoneInput from "react-native-phone-number-input";
 import Button from '../components/Button'
 import {useNavigation} from '@react-navigation/native'
@@ -24,6 +24,7 @@ const OTPloginScreen = () => {
 
     return (
         <View style={{...styles.container, backgroundColor: '#ffffff'}}>
+            <Image source={require('../assets/logo.png')} style={{height: 80, width: 80, resizeMode: 'contain', marginBottom: 50}}/>
             <Text style={{fontSize: 24, marginBottom: 15, fontWeight: '900', color: '#000000', textAlign: 'center'}}>Enter Phone number to get verified.</Text>
             <PhoneInput
                 ref={phoneInput}
