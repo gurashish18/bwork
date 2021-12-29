@@ -50,7 +50,7 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum re
                                     <Text style={{color: '#000000', fontSize: 20, fontWeight: 'bold'}}>{item.time} mins</Text>
                                 </View>
                             </View>
-                            <Button buttontext="BOOK SERVICE" onPress={toggleModal}/>
+                            <Button buttontext="BOOK SERVICE" onPress={()=>navigation.navigate("Confirm", {item})}/>
                             <Modal isVisible={isModalVisible} style={{backgroundColor: '#ffffff'}}>
                                 <ScrollView style={{ flex: 1}}>
                                     <Icon name='close' size={30} style={{ position: 'absolute', top: 0, right: 0,color: '#000000' , padding: 20}} onPress={toggleModal}/>

@@ -44,6 +44,7 @@ const OTPverifyScreen = ({ route: { params: { phoneNumber } }}) => {
     return (
         <View style={{flex:1, backgroundColor: '#ffffff', alignItems: 'center', justifyContent: 'center'}}>
             <Spinner
+              color='#000000'
               visible={spinner}
               textContent={'Loading...'}
               textStyle={{color: '#000000'}}

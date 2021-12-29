@@ -684,6 +684,73 @@ export const specialServices = [
     },
 ]
 
+export const applianceServices = [
+    {
+        id: '1',
+        title: 'Gyser',
+        imageuri: require('../assets/gyser.jpeg'),
+        serviceDetails: 'This service inculde this and that',
+        booking: [
+            {
+            id: '1',
+            title: 'Gyser Services',
+            off: 10,
+            stars: 4.8,
+            rating: 200,
+            price: 299,
+            time: 25,
+            }
+        ]
+    },
+    {
+        id: '2',
+        title: 'Washing Machine',
+        imageuri: require('../assets/washing.jpg'),
+        serviceDetails: 'This service inculde this and that',
+        booking: [
+            {
+            id: '1',
+            title: 'Washing Machine Services',
+            off: 25,
+            stars: 4.8,
+            rating: 200,
+            price: 299,
+            time: 25,
+        }
+    ]
+    },
+    {
+        id: '3',
+        title: 'Fridge',
+        imageuri: require('../assets/fridge.jpg'),
+        serviceDetails: 'This service inculde this and that',
+        booking: [{
+            id: '1',
+            title: 'Fridge Services',
+            off: 25,
+            stars: 4.8,
+            rating: 200,
+            price: 299,
+            time: 25,
+        }]
+    },
+    {
+        id: '4',
+        title: 'Telivision',
+        imageuri: require('../assets/tv.jpg'),
+        serviceDetails: 'This service inculde this and that',
+        booking: [{
+            id: '1',
+            title: 'Telivision Services',
+            off: 25,
+            stars: 4.8,
+            rating: 200,
+            price: 299,
+            time: 25,
+        }]
+    },
+]
+
 
 export const newdata = [
     {
@@ -1319,7 +1386,7 @@ export const newdata = [
         imageuri: require('../assets/logo.png'),
         title: 'Shop near by',
         dest: 'Service',
-        bannerimage: require('../assets/shop.png'),
+        bannerimage: require('../assets/homepaint.jpeg'),
         job: 'Shop near by',
         services: [
             {

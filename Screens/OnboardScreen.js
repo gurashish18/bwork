@@ -86,7 +86,7 @@ const slides = [
       key: 's1',
       text: 'Manpower solutions for Automobile Industry, Food Industry, Plastic Industry, Educational Institutions, Energy Sector, Bottling plants and Industrial housekeeping etc.',
       title: 'Man power supply in India & Abroad',
-      image: require('../assets/logo.png'),
+      image: require('../assets/logomain.png'),
       backgroundColor: '#ffffff',
     },
 ]
