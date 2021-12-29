@@ -7,20 +7,20 @@ const WINDOW_WIDTH = Dimensions.get("window").width
 const CARD_WIDTH = Math.round(WINDOW_WIDTH * 0.3)
 const CARD_WIDTH2 = Math.round(WINDOW_WIDTH)
 
-const ServicesScreen = ({ route: { params: { s } }}) => {
+const ServicesScreen = ({ route: { params: { item } }}) => {
     const navigation = useNavigation();
     return (
         <ScrollView style={{backgroundColor: '#ffffff'}}>
-            <ImageBackground source={s.bannerimage} style={{width: '100%', height: 250, resizeMode: 'contain'}}>
+            <ImageBackground source={item.bannerimage} style={{width: '100%', height: 250, resizeMode: 'contain'}}>
                 <View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'flex-end', alignItems: 'center'}}>
-                    <Text style={{fontSize: 30, color: '#ffffff', fontWeight: 'bold'}}>{s.job}</Text>
+                    <Text style={{fontSize: 30, color: '#ffffff', fontWeight: 'bold'}}>{item.job}</Text>
                 </View>
             </ImageBackground>
 
             <View style={{margin: 10, backgroundColor: '#eeeeee', borderRadius: 20, paddingVertical: 10}}>
                 <Text style={{color: '#000000', fontSize: 24, marginLeft: 20, fontWeight: 'bold', marginBottom: 20, textAlign: 'center'}}>Select a Service</Text>
                 <View style={{flex: 1,flexDirection: 'row',flexWrap: 'wrap'}}>
-                        {s.services.map((item) => (
+                        {item.services.map((item) => (
                             <TouchableOpacity key={item.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("ServiceBook", {item})}>
                                 <View>
                                     <Image source={item.imageuri} style={{height: 130,width: 130, resizeMode: 'contain', borderRadius: 10}} />
