@@ -768,6 +768,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/switches.jpg'),
                     title: 'Switch and Socket Services',
                     off: 25,
                     stars: 4.8,
@@ -783,6 +784,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/fan.jpeg'),
                     title: 'Fan Services',
                     off: 25,
                     stars: 4.8,
@@ -798,6 +800,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/bulb.jpg'),
                     title: 'Light Services',
                     off: 25,
                     stars: 4.8,
@@ -813,6 +816,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/drill.jpg'),
                     title: 'Wall Drilling Services',
                     off: 25,
                     stars: 4.8,
@@ -828,6 +832,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/inverter.jpg'),
                     title: 'Inverter Services',
                     off: 25,
                     stars: 4.8,
@@ -853,6 +858,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/motor.jpg'),
                     title: 'Motor Work',
                     off: 25,
                     stars: 4.8,
@@ -868,6 +874,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/tank.jpg'),
                     title: 'Tank Work',
                     off: 25,
                     stars: 4.8,
@@ -883,6 +890,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/pipes.jpg'),
                     title: 'Pipe Work',
                     off: 25,
                     stars: 4.8,
@@ -908,6 +916,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/bed.jpg'),
                     title: 'Bed Services',
                     off: 25,
                     stars: 4.8,
@@ -923,6 +932,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/window.jpg'),
                     title: 'Window and Door Services',
                     off: 25,
                     stars: 4.8,
@@ -938,6 +948,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/drawer.jpg'),
                     title: 'Cupboard and Drawer Services',
                     off: 25,
                     stars: 4.8,
@@ -953,6 +964,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/furniture.jpg'),
                     title: 'Furniture Assembly Services',
                     off: 25,
                     stars: 4.8,
@@ -978,6 +990,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/homepaint.jpeg'),
                     title: 'Home Painting',
                     off: 25,
                     stars: 4.8,
@@ -993,6 +1006,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/waterproof.jpg'),
                     title: 'Water Proofing',
                     off: 25,
                     stars: 4.8,
@@ -1008,6 +1022,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/walltexture.jpeg'),
                     title: 'Wall Texture',
                     off: 25,
                     stars: 4.8,
@@ -1023,6 +1038,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/whitewash.jpg'),
                     title: 'White Wash',
                     off: 25,
                     stars: 4.8,
@@ -1038,6 +1054,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/woodpolish.jpg'),
                     title: 'Wood Polishing',
                     off: 25,
                     stars: 4.8,
@@ -1063,6 +1080,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/cctvahd.png'),
                     title: 'CCTV Services',
                     off: 25,
                     stars: 4.8,
@@ -1088,6 +1106,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/gate.jpg'),
                     title: 'Gate Fabrication',
                     off: 25,
                     stars: 4.8,
@@ -1103,6 +1122,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/shed.jpg'),
                     title: 'Shed Fabrication',
                     off: 25,
                     stars: 4.8,
@@ -1129,6 +1149,7 @@ export const newdata = [
                 booking: [
                     {
                         id: '1',
+                        imageuri: require('../assets/splitac.jpeg'),
                         title: 'Split AC Services',
                         off: 25,
                         stars: 4.8,
@@ -1146,6 +1167,7 @@ export const newdata = [
                 booking: [
                     {
                     id: '1',
+                    imageuri: require('../assets/windowac.jpg'),
                     title: 'Window AC Services',
                     off: 30,
                     stars: 4.8,
@@ -1173,6 +1195,7 @@ export const newdata = [
                 booking: [
                     {
                     id: '1',
+                    imageuri: require('../assets/gyser.jpeg'),
                     title: 'Gyser Services',
                     off: 10,
                     stars: 4.8,
@@ -1190,6 +1213,7 @@ export const newdata = [
                 booking: [
                     {
                     id: '1',
+                    imageuri: require('../assets/washing.jpg'),
                     title: 'Washing Machine Services',
                     off: 25,
                     stars: 4.8,
@@ -1206,6 +1230,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/fridge.jpg'),
                     title: 'Fridge Services',
                     off: 25,
                     stars: 4.8,
@@ -1221,6 +1246,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/tv.jpg'),
                     title: 'Telivision Services',
                     off: 25,
                     stars: 4.8,
@@ -1246,6 +1272,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/kitchen.jpg'),
                     title: 'Modular Kitchen Services',
                     off: 25,
                     stars: 4.8,
@@ -1261,6 +1288,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/pool.jpg'),
                     title: 'Swimming Pool Services',
                     off: 25,
                     stars: 4.8,
@@ -1286,6 +1314,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/interior.jpg'),
                     title: 'Interior Design',
                     off: 25,
                     stars: 4.8,
@@ -1301,6 +1330,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/tiles.jpg'),
                     title: 'Tiles Work',
                     off: 25,
                     stars: 4.8,
@@ -1316,6 +1346,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/glass.jpg'),
                     title: 'Glass Work',
                     off: 25,
                     stars: 4.8,
@@ -1331,6 +1362,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/woodenwork.jpg'),
                     title: 'Wooden Work',
                     off: 25,
                     stars: 4.8,
@@ -1356,6 +1388,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/purifierservice.png'),
                     title: 'Purifier Service',
                     off: 25,
                     stars: 4.8,
@@ -1371,6 +1404,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/purifierinstall.jpg'),
                     title: 'Purifier Installation',
                     off: 25,
                     stars: 4.8,
@@ -1396,6 +1430,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/fan.jpeg'),
                     title: 'Fan Services',
                     off: 25,
                     stars: 4.8,
@@ -1411,6 +1446,7 @@ export const newdata = [
                 serviceDetails: 'This service inculde this and that',
                 booking: [{
                     id: '1',
+                    imageuri: require('../assets/motor.jpg'),
                     title: 'Motor Work',
                     off: 25,
                     stars: 4.8,

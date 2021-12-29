@@ -47,7 +47,7 @@ const MainScreen = () => {
                             <Text style={{...styles.title, color: '#000000', textAlign: 'center', marginBottom: 20}}>Appliance Services</Text>
                             <View style={{flex: 1,flexDirection: 'row',flexWrap: 'wrap'}}>
                                     {applianceServices.map((item) => (
-                                        <TouchableOpacity key={item.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5}} onPress={() => navigation.navigate("ServiceBook", {item})}>
+                                        <TouchableOpacity key={item.id} style={{flexDirection: 'column', alignItems: 'center', width: '50%', padding: 5, position: 'relative', zIndex: -1}} onPress={() => navigation.navigate("ServiceBook", {item})}>
                                             <View>
                                                 <Image source={item.imageuri} style={{height: 100,width: 100, resizeMode: 'contain'}} />
                                             </View>

@@ -70,8 +70,8 @@ export default OnboardScreen
 
 const styles = StyleSheet.create({
     introImageStyle: {
-        width: 250,
-        height: 250,
+        maxWidth: 350,
+        maxHeight: 350, 
         resizeMode: 'contain'
       },
       introTextStyle: {

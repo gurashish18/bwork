@@ -51,22 +51,6 @@ const PaymentScreen = ({ route: { params: { item } }}) => {
                     <Text style={{color: 'grey', fontSize: 18}}>₹{item.price - item.price * (item.off/100)}</Text>
                 </View>
 
-                <Text style={{color: '#000000', textAlign: 'center', fontSize: 30, marginVertical: 20, fontWeight: 'bold'}}>Select Address</Text>
-                <View style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5}}>
-                    <CheckBox
-                        tintColors={{true: '#ffc107'}}
-                        value={isSelected}
-                        onValueChange={setSelection}
-                        style={{}}
-                    />
-                    <Text style={{color: '#000000',fontSize: 20, marginLeft: 10}}>#abc, Sector x, U.E., Patna, Bihar</Text>
-                </View>
-
-                <TouchableOpacity style={{flexDirection: 'row', alignItems: 'center', marginVertical: 5, alignSelf:'center'}} onPress={()=>navigation.navigate('AddAddress')}>
-                    <Icon name="add" color='#000000' size={30}/>
-                    <Text style={{color: '#000000',fontSize: 16, marginLeft: 10}}>Add Address</Text>
-                </TouchableOpacity>
-
                 <View style={{alignSelf: 'center'}}>    
                     <Button buttontext="Confirm Booking" />
                 </View>        
