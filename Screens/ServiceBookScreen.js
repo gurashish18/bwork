@@ -7,6 +7,8 @@ import Modal from "react-native-modal";
 import CheckBox from '@react-native-community/checkbox'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
+const includes = [{text: "Installation, replacement or adjustment of upto two connection hoses"}, {text: "All hose types: PVC, rubberm textile steel"}, {text:"Procurement of extra parts (at extra cost)"}, {text:"Bowrk warranty and damage cover"}]
+
 
 const slots = ["1pm to 2pm", "4pm to 6pm", "7pm to 8pm"]
 
@@ -25,9 +27,16 @@ const ServiceBookScreen = ({ route: { params: { item } }}) => {
                 ListHeaderComponent={
                     <>
                         <Text style={{fontSize: 24, color:'#000000', paddingVertical: 20, marginLeft: 30, fontWeight: 'bold'}}>Book your service</Text>
-                        <Text style={{color: 'grey', fontSize: 18, padding: 10}}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae consectetur accusantium dicta at dolore veritatis qui sit odit optio, nulla quos tempora sapiente quaerat placeat fugiat. Eum ipsa sunt minus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea repellendus, nostrum sint, animi iste officia dolor nobis obcaecati optio laborum voluptatum eum est quae pariatur harum nulla, provident voluptate. Quo!
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum a nam ea dolorum rerum praesentium. Cumque eaque ipsum deserunt minima tempora ratione. Nihil harum dolorem laborum tempora eveniet. Maxime ipsam minima nobis a reprehenderit amet</Text>
+
+                        <Text style={{fontSize: 22, color:'#000000', paddingVertical: 20, marginLeft: 30}}>Includes</Text>
+                        {includes.map((item) => (
+                            <View style={{flexDirection: 'row', alignItems: 'center'}}>
+                                <Icon name="done" style={{color: 'grey'}} size={25}/>
+                                <Text style={{color: 'grey', fontSize: 18, padding: 10}}>{item.text}</Text>
+                            </View>
+                        ))}
+                        
                     </>
                 }
                 horizontal={false} 

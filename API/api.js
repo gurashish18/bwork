@@ -841,6 +841,54 @@ export const newdata = [
                     time: 25,
                 }]
             },
+            {
+                id: '6',
+                title: 'Wiring',
+                imageuri: require('../assets/wiring.jpeg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/wiring.jpeg'),
+                    title: 'Wiring',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '7',
+                title: 'Casing Wiring',
+                imageuri: require('../assets/casingwire.png'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/casingwire.png'),
+                    title: 'Casing Wiring',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '8',
+                title: 'Open Wiring',
+                imageuri: require('../assets/openwire.jpeg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/openwire.jpeg'),
+                    title: 'Open Wiring',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
         ]
     },
     {
@@ -892,6 +940,38 @@ export const newdata = [
                     id: '1',
                     imageuri: require('../assets/pipes.jpg'),
                     title: 'Pipe Work',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '4',
+                title: 'Gi pipe fitting',
+                imageuri: require('../assets/gi.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/gi.jpg'),
+                    title: 'Gi pipe fitting',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '5',
+                title: 'Toilet Seat fitting',
+                imageuri: require('../assets/toiletseat.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/toiletseat.jpg'),
+                    title: 'Toilet Seat fitting',
                     off: 25,
                     stars: 4.8,
                     rating: 200,
@@ -1089,6 +1169,54 @@ export const newdata = [
                     time: 25,
                 }]
             },
+            {
+                id: '2',
+                title: 'CCTV Repair',
+                imageuri: require('../assets/cctvrepair.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/cctvrepair.jpg'),
+                    title: 'CCTV Repair',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '3',
+                title: 'CCTV Wiring',
+                imageuri: require('../assets/cctvwire.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/cctvwire.jpg'),
+                    title: 'CCTV Wiring',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
+            {
+                id: '4',
+                title: 'WiFi',
+                imageuri: require('../assets/wifi.png'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/wifi.png'),
+                    title: 'WiFi',
+                    off: 25,
+                    stars: 4.8,
+                    rating: 200,
+                    price: 299,
+                    time: 25,
+                }]
+            },
         ]
     },
     {
@@ -1129,6 +1257,54 @@ export const newdata = [
                     rating: 200,
                     price: 299,
                     time: 25,
+                }]
+            },
+            {
+                id: '3',
+                title: 'Grill Work',
+                imageuri: require('../assets/grill.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/grill.jpg'),
+                    title: 'Grill Work',
+                    off: 20,
+                    stars: 4,
+                    rating: 100,
+                    price: 399,
+                    time: 45,
+                }]
+            },
+            {
+                id: '4',
+                title: 'Railing Work',
+                imageuri: require('../assets/railing.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/railing.jpg'),
+                    title: 'Railing Work',
+                    off: 20,
+                    stars: 4,
+                    rating: 100,
+                    price: 399,
+                    time: 45,
+                }]
+            },
+            {
+                id: '5',
+                title: 'Window Fabrication',
+                imageuri: require('../assets/windowfab.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/windowfab.jpg'),
+                    title: 'Window Fabrication',
+                    off: 20,
+                    stars: 4,
+                    rating: 100,
+                    price: 399,
+                    time: 45,
                 }]
             },
         ]
@@ -1295,6 +1471,54 @@ export const newdata = [
                     rating: 200,
                     price: 299,
                     time: 25,
+                }]
+            },
+            {
+                id: '3',
+                title: 'Home Construction',
+                imageuri: require('../assets/homeconst.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/homeconst.jpg'),
+                    title: 'Home Construction',
+                    off: 10,
+                    stars: 5,
+                    rating: 500,
+                    price: 799,
+                    time: 60,
+                }]
+            },
+            {
+                id: '4',
+                title: 'Home Designer',
+                imageuri: require('../assets/homedesign.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/homedesign.jpg'),
+                    title: 'Home Designer',
+                    off: 10,
+                    stars: 5,
+                    rating: 500,
+                    price: 799,
+                    time: 60,
+                }]
+            },
+            {
+                id: '5',
+                title: 'Architect',
+                imageuri: require('../assets/architect.jpg'),
+                serviceDetails: 'This service inculde this and that',
+                booking: [{
+                    id: '1',
+                    imageuri: require('../assets/architect.jpg'),
+                    title: 'Architect',
+                    off: 10,
+                    stars: 5,
+                    rating: 500,
+                    price: 799,
+                    time: 60,
                 }]
             },
         ]
