@@ -1,6 +1,6 @@
 # Bwork
 
-Bwork is a platform where users book nearby services - electricians, AC servies, plumber and more. Delivered by trained professionals conveniently at home. This not only helps the customers to hastle free experience but also helps the workers to get jobs.
+Bwork is a platform where users book nearby services - electricians, AC servies, plumber and more. Delivered by trained professionals conveniently at home. This not only helps the customers to have a hastle free experience but also helps the workers to get jobs.
 
 # Technology used:
 React Native
